@@ -10,12 +10,13 @@ const avatars = ['👻', '🎃', '💀', '🧛', '🧟', '🕷️', '🦇', '�
 
 const categories = [
   { name: 'Mixto', emoji: '🎲', color: 'from-purple-600 to-pink-600' },
+  { name: 'Terror', emoji: '🎬', color: 'from-red-600 to-orange-600' },
+  { name: 'Musica', emoji: '🎵', color: 'from-blue-600 to-cyan-600' },
   { name: 'Historia', emoji: '🏛️', color: 'from-amber-600 to-orange-600' },
   { name: 'Ciencia', emoji: '🔬', color: 'from-green-600 to-emerald-600' },
-  { name: 'Musica', emoji: '🎵', color: 'from-blue-600 to-cyan-600' },
-  { name: 'Informatica', emoji: '💻', color: 'from-indigo-600 to-purple-600' },
   { name: 'Arte', emoji: '🎨', color: 'from-pink-600 to-rose-600' },
   { name: 'Geografia', emoji: '🌍', color: 'from-teal-600 to-green-600' },
+  { name: 'Informatica', emoji: '💻', color: 'from-indigo-600 to-purple-600' },
 ];
 
 export default function WelcomeScreen({ onStart, announcement }: WelcomeScreenProps) {
@@ -60,7 +61,7 @@ export default function WelcomeScreen({ onStart, announcement }: WelcomeScreenPr
             🎃 TRIVIA HALLOWEEN 🎃
           </h1>
           <h2 className="text-2xl font-bold text-white mb-4">
-            La Mansión del Conocimiento
+            Test de Cultura General
           </h2>
           {announcement && (
             <p className="text-orange-300 text-sm mb-4 italic">
@@ -68,7 +69,7 @@ export default function WelcomeScreen({ onStart, announcement }: WelcomeScreenPr
             </p>
           )}
           <p className="text-gray-300 text-sm">
-            Responde 5 preguntas de cultura general para escapar...
+            ¿Cuánto sabes sobre Halloween? Responde 5 preguntas escalofriantes...
           </p>
         </div>
 
@@ -141,7 +142,7 @@ export default function WelcomeScreen({ onStart, announcement }: WelcomeScreenPr
         </form>
 
         <div className="mt-6 text-center text-gray-400 text-xs">
-          <p>⚠️ 5 preguntas te esperan. ¿Podrás responder todas correctamente? ⚠️</p>
+          <p>⚠️ Pon a prueba tus conocimientos de terror y misterio ⚠️</p>
         </div>
       </div>
     </div>

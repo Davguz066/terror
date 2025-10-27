@@ -15,12 +15,13 @@ interface GameRoomProps {
 }
 
 const categoryEmojis: { [key: string]: string } = {
+  'Terror': '🎬',
+  'Musica': '🎵',
   'Historia': '🏛️',
   'Ciencia': '🔬',
-  'Musica': '🎵',
-  'Informatica': '💻',
   'Arte': '🎨',
   'Geografia': '🌍',
+  'Informatica': '💻',
 };
 
 const difficultyColors: { [key: string]: string } = {

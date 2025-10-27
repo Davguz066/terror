@@ -164,7 +164,7 @@ function App() {
       });
       setPlayerAvatar(avatar);
       setScreen('game');
-      showNotif('¡Bienvenido a la trivia! 👻');
+      showNotif('¡Bienvenido al test de Halloween! 👻');
     } catch (error) {
       console.error('Error starting game:', error);
       showNotif('Error al iniciar el juego', 'error');
@@ -233,7 +233,7 @@ function App() {
             isPlaying: false
           }));
           setScreen('victory');
-          showNotif('¡HAS COMPLETADO LA TRIVIA! 🎉', 'success');
+          showNotif('¡HAS COMPLETADO EL TEST! 🎉', 'success');
         } else {
           await supabase
             .from('game_sessions')
@@ -341,10 +341,10 @@ function App() {
         <div className="bg-black/90 backdrop-blur-lg border-4 border-red-600 rounded-lg p-8 max-w-md w-full text-center">
           <Skull className="w-20 h-20 text-red-500 mx-auto mb-4" />
           <h2 className="text-3xl font-bold text-red-500 mb-4">
-            Juego Desactivado
+            Test Desactivado
           </h2>
           <p className="text-gray-300 mb-6">
-            El juego está temporalmente fuera de servicio.
+            El test está temporalmente fuera de servicio.
             Por favor, vuelve más tarde.
           </p>
           <button

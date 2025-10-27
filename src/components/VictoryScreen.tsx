@@ -26,8 +26,8 @@ export default function VictoryScreen({
   };
 
   const getPerformanceMessage = () => {
-    if (score >= 1200) return '¡MAESTRO DEL DAW! 🏆';
-    if (score >= 1000) return '¡Excelente trabajo! 🌟';
+    if (score >= 1200) return '¡MAESTRO DEL TERROR! 🏆';
+    if (score >= 1000) return '¡Excelente conocimiento! 🌟';
     if (score >= 800) return '¡Bien hecho! 👏';
     return '¡Lo lograste! 🎉';
   };
@@ -55,13 +55,13 @@ export default function VictoryScreen({
             {playerAvatar}
           </div>
           <h1 className="text-5xl font-bold text-green-500 mb-2 animate-pulse">
-            ¡HAS ESCAPADO!
+            ¡TRIVIA COMPLETADA!
           </h1>
           <h2 className="text-3xl font-bold text-white mb-4">
             {getPerformanceMessage()}
           </h2>
           <p className="text-gray-300 text-lg">
-            {playerNickname}, has demostrado tus habilidades como desarrollador web
+            {playerNickname}, has demostrado tus conocimientos de cultura general Halloween
           </p>
         </div>
 
@@ -87,11 +87,11 @@ export default function VictoryScreen({
 
         <div className="bg-green-950/30 border-2 border-green-600 rounded-lg p-6 mb-8">
           <h3 className="text-green-400 font-bold text-xl mb-3 text-center">
-            🎓 Has Completado el Desafío DAW 🎓
+            🎃 Has Completado el Test de Halloween 🎃
           </h3>
           <p className="text-gray-300 text-center">
-            Has demostrado dominio en HTML, CSS, JavaScript y Git.
-            ¡Sigue aprendiendo y mejorando tus habilidades!
+            Has demostrado tus conocimientos sobre terror, música macabra, historia oscura y más.
+            ¡Sigue explorando el mundo del misterio!
           </p>
         </div>
 
